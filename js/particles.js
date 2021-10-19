@@ -105,8 +105,7 @@ function createParticles(){
         let x = mouse.x
         let y = mouse.y
         let raduis = 13
-        // hue++
-        // let color = `hsl(${hue}, 100%, 50%)`
+
         if(random(1, -1) < 0)
             color = `#24c4c6`
         else
@@ -121,8 +120,6 @@ function createParticles(){
 
 function animate(){
     myReq = requestAnimationFrame(animate)
-    // ctx.fillStyle = "rgb(0, 0, 0, 1)" 
-    // ctx.fillRect(0,0,canvas.width,canvas.height)
     ctx.clearRect(0,0,canvas.width,canvas.height)
     if(innerWidth >= 1000)
         createParticles(ctx)
